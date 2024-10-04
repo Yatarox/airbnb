@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0ECE9;
+    height: 100%;
+}
+
+.profile-page {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F0ECE9;
+}
+
+/* Close button */
+.close-btn {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    margin:10px;
+    padding:20px;
+    border-radius: 20px;
+    background-color:white;
+    
+}
+.profile-header .Profile-collum{
+    text-align: center;
+
+}
+.profile-picture div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-info{
+    padding-left:40px;
+    width: 100%;
+    height: auto;
+}
+.profile-info h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: gray;
+    font-size: 20px;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+.profile-stats p {
+    margin: 5px 0;
+}
+
+/* Profile Details */
+.profile-details ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.profile-details ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-details ul li span {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Ask Rahul Section */
+.ask-rahul-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 10px 15px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Past Trips */
+.past-trips h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.trips {
+    display: flex;
+    gap: 20px;
+}
+
+.trip {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.bleu{
+    background-color: #E2F7F8;
+}
+
+.vert{
+    background-color: #DAF2DC;
+}
+
+.trip p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}

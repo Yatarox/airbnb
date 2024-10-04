@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AIRBNB</title>
+</head>
+
+<body>
+
+    <header class="main-header desktop">
+        <div class="header-container">
+            <h1 class="header-title">Rooms and 50+ features</h1>
+            <div class="header-video">
+                <img src="images/VideoVideo.png" alt="Video">
+                <p>Play the Rooms film</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <img src="images/airbnb_logo.png" class="nav-logo desktop" alt="Airbnb Logo">
+        <div class="nav-search desktop">
+            <p id="nav-where">Where to?</p>
+            <a href="#">Anywhere</a>
+            <span class="divider">|</span>
+            <a href="#">Any week</a>
+            <span class="divider">|</span>
+            <a href="#">Add guest</a>
+            <img src="images/Search.png" alt="Search" class="nav-icon-search desktop">
+        </div>
+        <div class="nav-right desktop">
+            <p>Airbnb your home</p>
+            <img src="images/Globe.png" class="nav-icon-globe" alt="Globe" id="hamburger">
+
+            <div class="nav-burger">
+                <div class="hamburger" id="hamburgerMenu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <img src="images/Ellipse.png" class="nav-icon-ellipse" alt="Profile" id="profileIcon">
+            </div>
+        </div>
+
+        <!-- Menu déroulant pour le hamburger -->
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Menu de profil -->
+        <div class="profile-menu" style="display: none;">
+            <a href="#profile">Mon Profil</a>
+            <a href="#settings">Paramètres</a>
+            <a href="#logout">Se déconnecter</a>
+        </div>
+
+        <button class="search-button phone" onclick="showCalendar()">
+            <div class="search-input">
+                <img src="images/OSKOUR.png" alt="Search" class="search-icon">
+                <p class="search-placeholder">Where to?</p>
+                <a href="#">Anywhere</a>
+                <span class="divider">•</span>
+                <a href="#">Any week</a>
+                <span class="divider">•</span>
+                <a href="#">Add guests</a>
+                <img src="images/Param.png" alt="Settings" class="settings-icon">
+            </div>
+        </button>
+    </nav>
+
+    <main>
+        <div class="category-images">
+            <a href="#"><img src="images/Rooms.png" alt="Rooms"></a>
+            <a href="#"><img src="images/Farms.png" alt="Farms"></a>
+            <a href="#"><img src="images/Amazing_pools.png" alt="Amazing Pools"></a>
+            <a href="#"><img src="images/Countryside.png" alt="Countryside"></a>
+            <a href="#"><img class="desktop" src="images/National_Parks.png" alt="National Parks"></a>
+            <a href="#"><img class="desktop" src="images/Historical_Homes.png" alt="Historical Homes"></a>
+            <a href="#"><img class="desktop" src="images/Tiny_house.png" alt="Tiny House"></a>
+            <a href="#"><img class="desktop" src="images/Lakefront.png" alt="Lakefront"></a>
+            <a href="#"><img class="desktop" src="images/Cabins.png" alt="Cabins"></a>
+            <a href="#"><img class="desktop" src="images/Beachfront.png" alt="Beachfront"></a>
+            <a href="#"><img class="desktop" src="images/Castles.png" alt="Castles"></a>
+            <a href="#"><img class="desktop" src="images/Design.png" alt="Design"></a>
+            <a href="#"><img class="desktop" src="images/Amazing_Views.png" alt="Amazing Views"></a>
+            <a href="#"><img class="desktop" src="images/Arrow.png" alt="Arrow"></a>
+        </div>
+
+        <div class="toggle-section desktop">
+            <div class="price-toggle">
+                <div class="toggle-label">
+                    <label for="total-price">Display total price</label>
+                    <input type="text" id="total-price" name="total-price" placeholder="Includes all fees, before taxes">
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="room-gallery">
+            <img src="images/Room_1.png" alt="Room 1">
+            <img src="images/Room_2.png" alt="Room 2">
+            <img src="images/Room_3.png" alt="Room 3">
+            <img src="images/Room.png" alt="Room">
+        </div>
+
+        <a href="#" class="btn-show-map desktop">
+            <img src="images/Show_Map_Button.png" alt="Show Map Button">
+        </a>
+    </main>
+
+    <footer class="main-footer desktop">
+        <div class="footer-left">
+            <p>© 2024 Airbnb</p>
+            <a href="#">Confidentialité</a><span class="divider">.</span>
+            <a href="#">Conditions générales</a><span class="divider">.</span>
+            <a href="#">Plan du site</a><span class="divider">.</span>
+            <a href="#">Fonctionnement du site</a><span class="divider">.</span>
+            <a href="#">Infos sur l'entreprise</a>
+        </div>
+        <div class="footer-right">
+            <img src="images/Br.png" alt="Footer Branding">
+        </div>
+    </footer>
+
+    <nav class="nav-mobile phone" id="barre">
+        <div class="nav-mobile-links">
+            <a class="nav-link active" href="#"><img src="images/OSKOUR.png" alt="Explore" class="nav-icon"></a>
+            <a class="nav-link" href="#"><img src="images/heart.png" alt="Wishlist" class="nav-icon"></a>
+            <a class="nav-link" href="#"><img src="images/airbnb.png" alt="Trips" class="nav-icon"></a>
+            <a class="nav-link" href="#"><img src="images/Inbox.png" alt="Inbox" class="nav-icon"></a>
+            <span class="nav-profile" onclick="toggleProfileMenu()"><img src="images/Ellipse.png" alt="Profile" class="nav-icon"></span>
+        </div>
+        <div class="nav-mobile-links">
+            <a class="nav-link" href="#">Search</a>
+            <a class="nav-link" href="#">Wishlist</a>
+            <a class="nav-link" href="#">Trips</a>
+            <a class="nav-link" href="#">Inbox</a>
+            <a class="nav-link" href="#">Profile</a>
+        </div>
+    </nav>
+
+    <div id="profileMenu" class="profile-menu">
+        <a href="airbnb.html" class="close-btn">&times;</a>
+        <div class="profile-header">
+            <div class="profile-column">
+                <img class="profile-picture" src="images/profile.png" alt="Profile Picture">
+                <h2>Rahul</h2>
+                <p>Superhost</p>
+            </div>
+            <div class="profile-info">
+                <div class="profile-stats">
+                    <p><strong>17</strong> Reviews</p>
+                    <p><strong>4.94</strong> Rating</p>
+                    <p><strong>8</strong> Years hosting</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <ul>
+                <li><span>👨‍💻</span> My work: UX designer</li>
+                <li><span>💡</span> Fun fact: I am open for remote jobs</li>
+                <li><span>🍽️</span> For guests, I always: Share local tips</li>
+                <li><span>❤️</span> I’m obsessed with: Traveling & tennis</li>
+                <li><span>🌿</span> Pets: All my plants</li>
+                <li><span>👤</span><a href="Profile.html"> More details</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="calendar">
+        <button class="close-calendar" onclick="restorePage()">✖</button>
+        <div class="calendar-main">
+            <h1>When's your trip?</h1>
+            <div class="calendar-switch">
+                <div>
+                    <p id="calendar-choose">Choose dates</p>
+                </div>
+                <div>
+                    <p>I'm flexible</p>
+                </div>
+            </div>
+            <div class="calendar-date">
+                <h2>April 2024</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="calendar-selected">12</td>
+                            <td class="gray">13</td>
+                        </tr>
+                        <tr>
+                            <td class="gray">14</td>
+                            <td class="gray">15</td>
+                            <td class="gray">16</td>
+                            <td class="gray">17</td>
+                            <td class="calendar-selected">18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="calendar-options">
+                <span id="options1" onclick="toggleOptionBorder(this)"><p>Exact dates</p></span>
+                <span id="options2" onclick="toggleOptionBorder(this)"><p>+ 1 day</p></span>
+                <span id="options3" onclick="toggleOptionBorder(this)"><p>+ 2 days</p></span>
+            </div>
+        </div>
+        <div class="calendar-bot">
+            <p>4 homes available</p>
+            <img src="images/Carre.png">
+        </div>
+
+        <div class="calendar-footer">
+            <a>Clear</a>
+            <button onclick="restorePage()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
